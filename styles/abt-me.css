@@ -32,7 +32,7 @@ header {
 
 header img {
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 70px;
     width: 400px;  
 }
 
@@ -45,17 +45,24 @@ header p {
   
 }
 
-/* Configuração do botão de voltar */
+/* Configuração dos links */
 nav {
     display: flex;
     flex-direction: row;
     margin: 0;
    
     
-    margin-top: 30px;
+    /* margin-top: 30px; */
 
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    /* background-color: #785AEB; */
+    background-color: #360b56;
+    /* background: linear-gradient(45deg, #4e1c98, #806aff); */
+    width: 100vw;
+    padding: 14px;
 
 }
 
@@ -63,27 +70,34 @@ nav {
     display: block;
     margin-left: 30px;
     box-sizing: border-box;
-    border: 2px solid #dea0ffc3;
+    /* border: 2px solid #dea0ffc3; */
     color: #f3e1ff;
-    width: 138px;
+    width: 110px;
 
     text-decoration: none;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
 
-    border-radius: 30px;
-    padding: 16px;  
+    /* border-radius: 30px; */
+    padding: 8px;  
     
     transition-duration: 0.5s;
+   
+    text-decoration: underline;
+    text-decoration-color: transparent;
+     text-underline-offset: 6px;
 }
 
 /* Pseudoclasse do botão Voltar */
 #abt-me a:hover {
-    background-color: #f3dcff;
-    box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
-    color: #3f0c6e;
+    /* background-color: #e9c1ff; */
+    /* box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242); */
+    /* color: #3f0c6e; */
+
+    text-decoration-color: rgba(255, 255, 255, 0.744);
 
     transition-duration: 0.5s;
+
 }
 
 
@@ -355,7 +369,7 @@ div.form {
 
     #abt-me a {
         margin-left: 40px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #texto1, #texto2 {
