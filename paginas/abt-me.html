@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="../styles/abt-me.css">
+    <link rel="shortcut icon" href="../imagens/chocolate-quente.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Links para outras páginas-->
+            <a href="../index.html">Voltar</a>
+            <a href="formacao.html" target="_self" rel="next">Formação</a>
+            <a href="projetos.html" target="_self" rel="next">Projetos</a>
+            <a href="form.html" target="_self" rel="next">Fale comigo</a>
+        </nav>
+        <!-- Seção superior para foto e pequena apresentação -->
+        <section class="top">
+            <img src="../imagens/me.png" alt="" class="me">
+            <p>Me chamo Pietra Ataulo, mas prefiro que me chamem de Pi, heh. Atualmente estou cursando Ciência da Computação e construindo um belo caminho na área de Dados, mas além disso, é claro que tenho alguns hobbies especiais, como por exemplo desenhar :D<br>
+            Eu que fiz essa imagem aí em cima! 
+            </p>
+        </section>
+    </header>
+    <main>
+        <!-- Seção 1 sobre animais -->
+        <section class="texto" id="texto1">
+            <img src="../imagens/peter-port2.jpg" alt="" class="imagem-lado">
+            <p>Eu adoro animais! Quando pequena, já quis ser veterinária, mas confesso que tenho um coração mole demais para isso. <br>
+
+            Esse peludo aí do lado foi meu primeiro cachorrinho (e companheiro), <span class="palavra-especial">Peter.</span> <br>
+
+            Apesar de todas as mordidas que ele já me deu, ele era muito fofinho de apertar!!!
+            
+            </p>
+        </section>
+        <!-- Imagem fixada no meio -->
+        <section class="imagem-fundo">
+            <p class="texto-imagem">Faço crochê às vezes!</p>
+        </section>
+        <!-- Seção 2 sobre jogos -->
+        <section class="texto" id="texto2">
+            <p>Uma das minhas maiores paixões são <span class="jogos" onclick="tocar()">JOGOS</span>, eu posso dizer com toda certeza que essa paixão é culpa do meu pai, pois foi ele quem colocou um controle de Playstation na minha mão quando eu mal sabia escrever! <br>
+
+            <span class="palavra-especial">Hollow Knight</span>, apesar de ser um jogo simples, é meu jogo favorito por ser adorável e ao mesmo tempo bem... <span class="palavra-especial">desafiador</span>. <br>
+
+            Além dele, também gosto muito de Horizon Zero Dawn, Little Nightmares, Ratchet & Clank, Resident Evil 7 e aquele jogo de minerar e construir
+            </p>
+            <img src="../imagens/hk-port2.jpg" alt="" class="imagem-lado">
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script>
+        // Função que toca um áudio quando clica na palavra
+        function tocar() {
+            var audio = new Audio('../audio/game.mp3');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
