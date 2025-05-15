@@ -46,6 +46,16 @@ header p {
   
 }
 
+.nome {
+    color: #2e0642;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #2e06424e;
+    
+}
+
 /* Configuração dos links */
 nav {
     display: flex;
