@@ -155,7 +155,8 @@ nav {
 }
 
 #croche {
-    background-image: url(../imagens/temporario-port.jpg);
+    background-image: url(../imagens/croche.jpg);
+    background-position: center top;
 }
 
 #horizon {
