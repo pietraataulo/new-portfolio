@@ -65,6 +65,8 @@ nav {
     width: 100vw;
     padding: 14px;
 
+    z-index:1; 
+
 }
 
 #abt-me a { 
@@ -101,17 +103,6 @@ nav {
 
 }
 
-
-/* Altura do rodapé */
-footer {
-    height: 9vh;
-    background-color: black;
-    color: #faf3ff;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Configuração da primeira seção */
 #abt-me .top {
@@ -302,6 +293,8 @@ div.projetos {
     transform: scale(101%);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.44);
     transition-duration: .5s;
+
+    
 }
 
 /* Configuração das imagens */
@@ -433,6 +426,17 @@ form div {
     transform: scale(105%);
 
     transition-duration: 0.5s;
+}
+
+/* Rodapé */
+footer {
+    height: 9vh;
+    background-color: black;
+    color: #faf3ff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media query para telas grandes */
