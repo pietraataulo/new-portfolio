@@ -68,14 +68,14 @@ nav {
 
 #abt-me a { 
     display: block;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     box-sizing: border-box;
     /* border: 2px solid #dea0ffc3; */
     color: #f3e1ff;
     width: 110px;
 
     text-decoration: none;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
 
     /* border-radius: 30px; */
@@ -290,7 +290,7 @@ div.projetos {
     display: grid;
     grid-template-columns: 70vw;
 
-    gap: 2%;
+    gap: 3%;
     justify-content: center;
 
 }
