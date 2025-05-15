@@ -21,6 +21,7 @@ html {
   
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 
 }
 
@@ -331,14 +332,14 @@ div.projetos {
 div.form {
     background-color: rgb(34, 2, 43);
     /* height: 90vh; */
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .form h1 {
     text-align: center;
     padding: 60px;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     background: -webkit-linear-gradient(left,#fff2fa, #ffb5e9, #ff0d8e); 
     background-clip: text;
