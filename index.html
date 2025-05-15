@@ -14,7 +14,7 @@
             <a href="#abt-me">Sobre mim</a>
             <a href="#formacao" target="_self" rel="next">Formação</a>
             <a href="#projetos" target="_self" rel="next">Projetos</a>
-            <a href="paginas/form.html" target="_self" rel="next">Fale comigo</a>
+            <a href="#form" target="_self" rel="next">Fale comigo</a>
         </nav>
         <!-- Seção superior para foto e pequena apresentação -->
         <section class="top">
@@ -135,6 +135,34 @@
         <div id="form" class="form">
             <h1>Vamos Conversar!</h1>
 
+            <div class="div-externa">
+            <!-- Formulário -->
+                <form action="#" autocomplete="off">
+                    <!-- Parte superior (seção para inputs) -->
+                    <section>
+                        <!-- Caixa com input Nome -->
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <!-- Caixa com input Email -->
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <!-- Caixa com input Mensagem -->
+                        <div>
+                            <label for="mensagem">Mensagem:</label>
+                            <input type="text" name="mensagem" id="mensagem" placeholder="Alguma coisa legal">
+                        </div>
+                    </section>
+                    
+                    <!-- Parte inferior (botão enviar) -->
+                    <container class="box-btn">
+                        <input type="button" value="Enviar" class="button" onclick="Enviar()">
+                    </container>       
+                </form>
+            </div>
         </div>
     </main>
     <footer>
@@ -145,6 +173,11 @@
         function tocar() {
             var audio = new Audio('../audio/game.mp3');
             audio.play();
+        }
+
+        // Função que mostra uma mensagem ao clicar no botão Enviar
+        function Enviar() {
+            alert("Formulário ilustrativo");
         }
     </script>
 </body>

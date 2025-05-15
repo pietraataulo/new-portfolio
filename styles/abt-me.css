@@ -208,10 +208,7 @@ footer {
     flex-flow: column;
 
     width: 100%;
-    
 
-
-  
 }
 
 .formacao div {  
@@ -265,12 +262,12 @@ footer {
 /* Projetos */
 
 div.projetos {
-    /* background: linear-gradient(45deg, #130757, #58a4cf, #bafdff); */
     background: linear-gradient(45deg, #3a0757, #3b0659, #820b86);
 
-     box-shadow: inset 0px 10px 10px -3px rgba(0, 0, 0, 0.123);
+    box-shadow: inset 0px 10px 10px -3px rgba(0, 0, 0, 0.123);
 
-     padding-bottom: 200px;
+    padding-bottom: 300px;
+
 
    
 }
@@ -278,11 +275,9 @@ div.projetos {
 .projetos h1 {
     color: #f4dcff;
     text-align: center;
-    padding: 75px;
-
-    /* background: -webkit-linear-gradient(right,#ff2259, #f8ebff 60%); */
-    /* background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    /* padding: 75px; */
+    padding-top: 80px;
+    margin-bottom: 70px;
     
 }
 
@@ -297,14 +292,10 @@ div.projetos {
 
 /* Configuração das seções */
 .projetos section {
-    /* background-color: rgb(254, 251, 247); */
     background-color: #faf3ff;
-    /* border: 2px solid rgba(26, 29, 176, 0.701); */
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.232);
     transition-duration: .5s;
-
-    /* height: 400px; */
     
 }
 
@@ -334,11 +325,116 @@ div.projetos {
     padding: 20px;
 }
 
+
 /* Formulário */
 
 div.form {
     background-color: rgb(34, 2, 43);
-    height: 90vh;
+    /* height: 90vh; */
+    padding-bottom: 100px;
+}
+
+.form h1 {
+    text-align: center;
+    padding: 60px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    background: -webkit-linear-gradient(left,#fff2fa, #ffb5e9, #ff0d8e); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Configuração do formulário */
+form {
+    background-color: white;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.386);
+    border-radius: 9px;
+    padding-bottom: 20px;
+    
+    margin: auto;
+
+    width: 80vw;
+      
+    text-align: center;  
+}
+
+/* Configuração dos inputs */
+input {
+    border-color: rgba(0, 0, 0, 0.514);
+    border-radius: 0px;
+    border-width: 0 0 0.3px 0;
+    height: 22px;  
+    width: 100%; 
+    margin-top: 5px;
+    
+}
+
+/* Configuração do label ("nome" do input) */
+.form label {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+/* Indentação dos inputs de texto e email */
+input[type=text], [type=email] {
+    text-indent: 6px;  
+}
+
+/* Configuração da parte superior do formulário */
+.form section {
+    padding: 20px;
+    box-shadow: inset 0px -3px 5px 0px rgba(0, 0, 0, 0.211);
+}
+
+/* Parágrafo */
+.form p {
+    padding: 10px;  
+}
+
+/* Configuração das caixas div dentro do formulário */
+form div {
+    width: 80%;
+    height: 70px;  
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: start;
+    padding: 20px;
+  
+}
+
+/* Configuração da caixa div que contém o formulário */
+.div-externa{
+    height: 400px;
+}
+
+/* Configuração da caixa do botão Enviar */
+.box-btn {
+    margin: 50px; 
+}
+
+/* Configuração do botão Enviar */
+.button { 
+    background-color: rgb(234, 216, 255);
+    color: #682faa;
+    margin-top: 20px;
+    border-radius: 14px;
+    width: 55px;
+    height: 35px;
+    font-size: 15px;
+    border-width: 0px;
+    transition-duration: 0.5s;
+
+}
+
+/* Pseudoclasse do botão Enviar */
+.button:hover {
+    background-color: rgb(166, 119, 219);
+    color: #f3e7ff;
+    
+    transform: scale(105%);
+
+    transition-duration: 0.5s;
 }
 
 /* Media query para telas grandes */
@@ -378,11 +474,8 @@ div.form {
         
     }
 
-    /* Formação */
 
-    .formacao {
-        /* padding: 0px; */
-    }
+    /* Formação */
 
     .formacao section {
         display: grid;
@@ -397,10 +490,6 @@ div.form {
    
     }
 
-
-    .formacao h1 {
-        /* box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.118); */
-    }
 
     .formacao .top {
         margin-right: 30px;
@@ -432,15 +521,49 @@ div.form {
     /* Projetos */
 
     /* Configuração de todas as divs dentro da main */
+    div.projetos {
+        padding-bottom: 200px;
+    }
+
     .projetos div {
         display: grid;
         grid-template-columns: 30vw 30vw;
         gap: 7%;
+
+        
     }
 
     .projetos img {
         max-width: 30vw;
           
+    }
+
+    .projetos h1 {
+        margin-bottom: 100px;
+    }
+
+    /* Formulário */
+
+    form {
+        width: 500px;
+    
+    }
+
+    form div {
+        width: 70%;
+        height: auto;
+        
+        margin: auto;
+        text-align: right;
+        padding: 20px;
+    }
+
+    input {
+        border-radius: 12px;
+        border-width: 0.3px;
+        height: 35px;  
+        width: 70%; 
+    
     }
 
 
